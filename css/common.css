@@ -22,3 +22,27 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+/* task-03 */
+.gallery {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.gallery li {
+  list-style-type: none;
+  transition: transform linear 250ms;
+}
+
+.gallery li:hover {
+  transform: scale(1.1);
+}
+
+.gallery img {
+  width: 300px;
+}
