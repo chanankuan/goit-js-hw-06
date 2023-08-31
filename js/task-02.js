@@ -8,13 +8,11 @@ const ingredients = [
   'Condiments',
 ];
 
-const markup = [];
-
-ingredients.forEach((ingredient) => {
+const markup = ingredients.map((ingredient) => {
   const li = document.createElement('li');
   li.classList.add('item');
   li.textContent = ingredient;
-  markup.push(li.outerHTML);
+  return li;
 });
 
-list.insertAdjacentHTML('beforeend', markup.join(''));
+list.append(...markup);
