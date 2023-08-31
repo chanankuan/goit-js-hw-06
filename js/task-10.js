@@ -28,7 +28,6 @@ function createBoxes(amount) {
 // Функція для очищення колекції
 function destroyBoxes() {
   boxes.innerHTML = '';
-  initialSize = 30;
 }
 
 // Функція для генерації рандомного кольору
