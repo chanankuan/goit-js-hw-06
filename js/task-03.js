@@ -14,12 +14,14 @@ const images = [
   },
 ];
 
-const markup = images.map(({ url, alt }) => {
-  return `
+const markup = images
+  .map(({ url, alt }) => {
+    return `
       <li>
         <img src="${url}" alt="${alt}">
       </li>
     `;
-});
+  })
+  .join('');
 
-list.insertAdjacentHTML('beforeend', markup.join(''));
+list.insertAdjacentHTML('beforeend', markup);
