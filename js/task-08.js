@@ -13,8 +13,7 @@ const onSubmit = (event) => {
     password: password.value,
   });
 
-  email.value = '';
-  password.value = '';
+  form.reset();
 };
 
 form.addEventListener('submit', onSubmit);
