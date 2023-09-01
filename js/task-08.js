@@ -8,10 +8,13 @@ const onSubmit = (event) => {
     return alert('Усі поля повинні бути заповнені');
   }
 
-  return console.log({
+  console.log({
     email: email.value,
     password: password.value,
   });
+
+  email.value = '';
+  password.value = '';
 };
 
 form.addEventListener('submit', onSubmit);
